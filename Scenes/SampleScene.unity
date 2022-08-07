@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0.91764706, g: 0.84705883, b: 0.6509804, a: 1}
+  m_AmbientEquatorColor: {r: 0.93333334, g: 0.60784316, b: 0.34117648, a: 1}
+  m_AmbientGroundColor: {r: 0.7921569, g: 0.40392157, b: 0.25490198, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -301,6 +302,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20.482, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfc6157251c487449db73d6f3cee8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionOffset: {x: 0, y: -0.6, z: 0}
+  lenght: 2
 --- !u!850595691 &1056006429
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -395,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa51d0500aed2547b4c6e60b7e47357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCount: 5
+  levelCount: 25
   beam: {fileID: 1513574446397737977, guid: 54eda3b9894c2b342b7c160b7bf121cf, type: 3}
   spawnPlatform: {fileID: 643687248937117342, guid: d7c7c888549dfe2429493c4d697e6151, type: 3}
   platforms:
@@ -445,4 +460,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b980c9ab6c577fb42a8d45b19691bd6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 15
+  rotateSpeed: 25
