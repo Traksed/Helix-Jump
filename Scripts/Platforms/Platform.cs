@@ -15,5 +15,9 @@ namespace Platforms
                 segment.Bounce(bounceForce, transform.position, bounceRadius);
             }
         }
+        public void Finish()
+        {
+            Debug.Log("Finish is True");
+        }
     }
 }
